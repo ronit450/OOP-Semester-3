@@ -1,0 +1,32 @@
+How to create Objects Dynamically
+Lets say if we have any type of Class such as Disatance class having attirbutes such as Int x and Int y.
+
+Now If we want to use Pointers to create a Objects the syntax is
+
+Disatance *Ptr 
+Ptr = new Disatance(2,11)
+
+this is will create a dynamic Disatance object of values 2 and 11
+
+after this all the functions of this ptr will be called by '->' this such as if class has function of show so 
+ 
+ ptr -> show(); will be used
+
+ After this we also have to delete the ptr also
+ delete ptr
+
+We can also create the arrays of pointer type as well
+ptr = new Disatance[10];
+
+for (int i = 0; i<10;i++){
+    ptr[i] = Disatance(2,i);
+}
+for (int i = 0; i<10, i++){
+    ptr[i].show();
+    (ptr+i) -> show();
+    (*(ptr+i)).show();
+
+    these two are thee representation of the same thing as they are methonds used to access the functions of class
+}
+
+delete [] ptr   = This deleted the array of objects

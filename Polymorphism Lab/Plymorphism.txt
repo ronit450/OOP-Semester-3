@@ -1,0 +1,20 @@
+So when we write the code for polymorphism so we override the function
+
+override means the function is present in parent class and in all child class as well
+
+lets say we have a animal class and three child class as dog, cat and cow and there is a function named as make_sound() which7
+will be same in parent class and child class as well.
+
+now for parent class we will use virtual keyword to differntitate with the child class.
+
+for example::
+class animal{
+    virtual void make_sound(){
+
+    }
+}
+class Dog: public animal{
+    void make_sound(){
+        
+    }
+}
