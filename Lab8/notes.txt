@@ -1,0 +1,6 @@
+So inheritance is something which enables us to derive the functionalities of one class to another class
+
+here the main class is known as base class and other is known as derived class.
+
+direction of arrow is from derived class to base class. becuase this arrow means it is being derived from
+base class. 

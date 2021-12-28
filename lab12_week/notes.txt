@@ -1,0 +1,32 @@
+
+auto A 
+auto is the keyword in c++ which will determine the data type of A automatically.
+example
+
+auto A = {1,2,3,4,5,6}
+
+
+as in python we have loops such as 
+for i in x   where  is some list
+
+in c++ we do
+for (int count: A){
+    cout<<count<<" "<<endl;
+}
+we cant use pointer array for this method. 
+
+The second thing alternate to Array in C++ is Vector. Array can only be of fixed length but we can add items in vectors
+vector <int> A = [1,2,3,4,5,6,7]
+vector.pushback(8)
+
+it will add 8 to the end of vector
+to iterate:
+for(int count: A){
+ cout<<count   
+}
+there is a operation of vector
+lets say we run a loop till 50 but there are onlly 12 elements in vector. 
+After printing 12 elements it will start throwing garbage value so to avoid that we use .alternate
+for (int count = 0; count<50; count++){
+    cout<<A.at[i]<<" "<<endl;
+}
